@@ -1,0 +1,158 @@
+first = #F6586A
+second = darken(#80DB4F, 7)
+
+grey-ulight = rgba(245, 245, 245, 1)
+grey-light = rgba(225, 225, 225, 1)
+grey = rgba(180, 180, 180, 0.5)
+grey-dark = rgba(60, 60, 60, 1)
+grey-udark = rgba(20, 20, 20, 1)
+
+body 
+	padding-top 60px
+	color grey-dark
+	font-size 14px
+	position: relative;
+
+.container
+	max-width 970px
+
+.navbar-default
+	background-color grey-ulight
+	border-bottom 4px solid grey-light
+	height 60px
+	.navbar-brand
+		img
+			height 30px
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus 
+	background-color grey-ulight
+	color first
+	margin-top 2px
+
+.navbar-default .navbar-nav > li > a 
+	background-color grey-ulight
+	color grey-dark
+	margin-top 2px
+	font-size 1.2em
+
+.portfolio
+	background-color first
+	color grey-ulight
+	padding-bottom 30px
+	.item
+		height 164px
+		background-color white
+		margin-bottom 10px
+		img
+			width 100%
+		&:hover
+			box-shadow 0px 3px 4px darken(first, 30)
+	.item-next
+		color grey-dark
+		text-align center
+		font-size 60px
+		padding-top 50px
+		line-height 30px
+		background-color white
+		box-shadow 0px 0px 4px darken(grey-light, 20)
+		small
+			margin-top 20px
+			font-size 14px
+	.int
+		background-color #3B1E5B
+		img
+			height 164px
+.head
+	border 1px solid grey-light
+	padding 2px
+	box-shadow 0px 0px 2px lighten(grey-dark, 40)
+
+.top
+	padding-top 30px
+	padding-bottom 30px
+	h3 
+		padding-top 25px
+
+.cv-item
+	padding-bottom 10px
+
+hr
+	display: block; height: 1px;
+	border: 0; border-top: 1px solid darken(grey-light, 10);
+	margin: 1em 0; padding: 0;
+
+.form-control
+	border-radius 1px
+
+.btn-primary
+	background-color second
+	color white
+	border 0px
+	border-bottom 3px solid darken(second, 10)
+	&:hover
+		background-color lighten(second, 5)
+		border-bottom 3px solid darken(second, 15)
+.contact
+	background-color grey-ulight
+	color grey-dark
+	margin-top 30px
+	padding-bottom 40px
+	.data
+		text-align center
+		font-size 1.4em
+.bubble 
+	position: relative;
+	width: 100%;
+	padding: 15px;
+	padding-top 1px
+	background: #FFFFFF;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	margin-top 15px
+	color grey-dark
+	padding-bottom 15px
+	box-shadow 0px 3px 4px darken(first, 30)
+
+	.closer
+		position absolute
+		right 14px
+		top 10px
+
+.bubble:after 
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-color: #FFFFFF transparent;
+	display: block;
+	width: 0;
+	z-index: 1;
+	top: -15px;
+	border-width: 0 18px 20px;
+
+.bubble-left:after 
+	left: 140px;
+.bubble-middle:after 
+	left: 300px;
+.bubble-right:after 
+	right: 130px;
+.progress-bar
+	background-color first
+.progress
+	border-radius 1px
+a
+	color first
+	&:hover
+		color darken(first, 20)
+		text-decoration none
+
+.form-control:focus  
+	border-color: first;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 3px lighten(first, 10);
+	outline: 0 none;
+.alert
+	border-radius 1px
+	padding 8px
+	padding-left 10px

@@ -1,5 +1,5 @@
-first = #F6586A
-second = darken(#80DB4F, 7)
+first = #378C9E
+second = #79B1C4
 
 grey-ulight = rgba(245, 245, 245, 1)
 grey-light = rgba(225, 225, 225, 1)
@@ -38,7 +38,17 @@ body
 	font-size 1.2em
 
 .portfolio
-	background-color first
+	// background-color first
+	background: rgb(71,181,204); /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover, rgba(71,181,204,1) 0%, rgba(55,140,158,1) 76%, rgba(55,140,158,1) 76%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(71,181,204,1)), color-stop(76%,rgba(55,140,158,1)), color-stop(76%,rgba(55,140,158,1))); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(71,181,204,1) 0%,rgba(55,140,158,1) 76%,rgba(55,140,158,1) 76%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover, rgba(71,181,204,1) 0%,rgba(55,140,158,1) 76%,rgba(55,140,158,1) 76%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover, rgba(71,181,204,1) 0%,rgba(55,140,158,1) 76%,rgba(55,140,158,1) 76%); /* IE10+ */
+	background: radial-gradient(ellipse at center, rgba(71,181,204,1) 0%,rgba(55,140,158,1) 76%,rgba(55,140,158,1) 76%); /* W3C */
+	// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#47b5cc', endColorstr='#378c9e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	border-top 3px solid #296875
+	border-bottom 15px solid second
 	color grey-ulight
 	padding-bottom 30px
 	.item
@@ -56,10 +66,12 @@ body
 		padding-top 50px
 		line-height 30px
 		background-color white
-		box-shadow 0px 0px 4px darken(grey-light, 20)
+		box-shadow 0px 0px 2px darken(first, 30)
 		small
 			margin-top 20px
 			font-size 14px
+		&:hover
+			box-shadow 0px 1px 6px darken(first, 30)
 	.int
 		background-color #3B1E5B
 		img
@@ -70,10 +82,11 @@ body
 	box-shadow 0px 0px 2px lighten(grey-dark, 40)
 
 .top
-	padding-top 30px
+	padding-top 15px
 	padding-bottom 30px
 	h3 
 		padding-top 25px
+	text-align center
 
 .cv-item
 	padding-bottom 10px

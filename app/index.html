@@ -5,32 +5,20 @@
     <title>Simon Nouwens - Freelance Ontwikkelaar</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="../bower_components/bootswatch/united/bootstrap.css">
     <!-- endbower -->
     <!-- endbuild -->
-    <!-- build:css styles/main.css -->
+    <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
   <body ng-app="genApp">
     <!-- Add your site or application content here -->
-    <div class="container">
-      <div class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-          <a class="navbar-brand" href="#"><img src="./images/logo.png"></a>
-          </div>
-          <div class="navbar-collapse collapse">
-            <!-- <ul class="nav navbar-nav navbar-right">
-              <li><a href="#portfolio">Portfolio</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul> -->
-          </div>
-        </div>  
-      </div> 
-    </div>
     <div ng-view=""></div>
 
     <!-- build:js scripts/vendor.js -->
@@ -48,7 +36,7 @@
     <!-- endbower -->
     <!-- endbuild -->
 
-    <!-- build:js scripts/scripts.js -->
+    <!-- build:js(.tmp) scripts/scripts.js -->
     <script src="scripts/app.js"></script>
     <script src="scripts/controllers/main.js"></script>
     <script src="scripts/controllers/about.js"></script>

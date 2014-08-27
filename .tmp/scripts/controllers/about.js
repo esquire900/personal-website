@@ -1,0 +1,14 @@
+'use strict';
+
+/**
+  * @ngdoc function
+  * @name xApp.controller:AboutCtrl
+  * @description
+  * # AboutCtrl
+  * Controller of the xApp
+ */
+angular.module('genApp').controller('AboutCtrl', function($scope) {
+  return $scope.awesomeThings = ['HTML5 Boilerplate', 'AngularJS', 'Karma'];
+});
+
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbnRyb2xsZXJzXFxhYm91dC5jb2ZmZWUiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsWUFBQSxDQUFBO0FBRUE7QUFBQTs7Ozs7O0dBRkE7QUFBQSxPQVNPLENBQUMsTUFBUixDQUFlLFFBQWYsQ0FDRSxDQUFDLFVBREgsQ0FDYyxXQURkLEVBQzJCLFNBQUMsTUFBRCxHQUFBO1NBQ3ZCLE1BQU0sQ0FBQyxhQUFQLEdBQXVCLENBQ3JCLG1CQURxQixFQUVyQixXQUZxQixFQUdyQixPQUhxQixFQURBO0FBQUEsQ0FEM0IsQ0FUQSxDQUFBIiwiZmlsZSI6ImNvbnRyb2xsZXJzXFxhYm91dC5qcyIsInNvdXJjZVJvb3QiOiIvc291cmNlLyIsInNvdXJjZXNDb250ZW50IjpbIid1c2Ugc3RyaWN0J1xuXG4jIyMqXG4gIyBAbmdkb2MgZnVuY3Rpb25cbiAjIEBuYW1lIHhBcHAuY29udHJvbGxlcjpBYm91dEN0cmxcbiAjIEBkZXNjcmlwdGlvblxuICMgIyBBYm91dEN0cmxcbiAjIENvbnRyb2xsZXIgb2YgdGhlIHhBcHBcbiMjI1xuYW5ndWxhci5tb2R1bGUoJ2dlbkFwcCcpXG4gIC5jb250cm9sbGVyICdBYm91dEN0cmwnLCAoJHNjb3BlKSAtPlxuICAgICRzY29wZS5hd2Vzb21lVGhpbmdzID0gW1xuICAgICAgJ0hUTUw1IEJvaWxlcnBsYXRlJ1xuICAgICAgJ0FuZ3VsYXJKUydcbiAgICAgICdLYXJtYSdcbiAgICBdXG4iXX0=

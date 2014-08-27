@@ -1,0 +1,20 @@
+'use strict';
+
+/**
+  * @ngdoc overview
+  * @name xApp
+  * @description
+  * # xApp
+  *
+  * Main module of the application.
+ */
+angular.module('genApp', ['ngAnimate', 'ngCookies', 'ngResource', 'ngRoute', 'ngSanitize', 'ngTouch']).config(function($routeProvider) {
+  return $routeProvider.when('/', {
+    templateUrl: 'views/main.html',
+    controller: 'MainCtrl'
+  }).otherwise({
+    redirectTo: '/'
+  });
+});
+
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC5jb2ZmZWUiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsWUFBQSxDQUFBO0FBRUE7QUFBQTs7Ozs7OztHQUZBO0FBQUEsT0FXRSxDQUFDLE1BREgsQ0FDVSxRQURWLEVBQ29CLENBQ2hCLFdBRGdCLEVBRWhCLFdBRmdCLEVBR2hCLFlBSGdCLEVBSWhCLFNBSmdCLEVBS2hCLFlBTGdCLEVBTWhCLFNBTmdCLENBRHBCLENBU0UsQ0FBQyxNQVRILENBU1UsU0FBQyxjQUFELEdBQUE7U0FDTixjQUNFLENBQUMsSUFESCxDQUNRLEdBRFIsRUFFSTtBQUFBLElBQUEsV0FBQSxFQUFhLGlCQUFiO0FBQUEsSUFDQSxVQUFBLEVBQVksVUFEWjtHQUZKLENBSUUsQ0FBQyxTQUpILENBS0k7QUFBQSxJQUFBLFVBQUEsRUFBWSxHQUFaO0dBTEosRUFETTtBQUFBLENBVFYsQ0FWQSxDQUFBIiwiZmlsZSI6ImFwcC5qcyIsInNvdXJjZVJvb3QiOiIvc291cmNlLyIsInNvdXJjZXNDb250ZW50IjpbIid1c2Ugc3RyaWN0J1xuXG4jIyMqXG4gIyBAbmdkb2Mgb3ZlcnZpZXdcbiAjIEBuYW1lIHhBcHBcbiAjIEBkZXNjcmlwdGlvblxuICMgIyB4QXBwXG4gI1xuICMgTWFpbiBtb2R1bGUgb2YgdGhlIGFwcGxpY2F0aW9uLlxuIyMjXG5hbmd1bGFyXG4gIC5tb2R1bGUoJ2dlbkFwcCcsIFtcbiAgICAnbmdBbmltYXRlJyxcbiAgICAnbmdDb29raWVzJyxcbiAgICAnbmdSZXNvdXJjZScsXG4gICAgJ25nUm91dGUnLFxuICAgICduZ1Nhbml0aXplJyxcbiAgICAnbmdUb3VjaCdcbiAgXSlcbiAgLmNvbmZpZyAoJHJvdXRlUHJvdmlkZXIpIC0+XG4gICAgJHJvdXRlUHJvdmlkZXJcbiAgICAgIC53aGVuICcvJyxcbiAgICAgICAgdGVtcGxhdGVVcmw6ICd2aWV3cy9tYWluLmh0bWwnXG4gICAgICAgIGNvbnRyb2xsZXI6ICdNYWluQ3RybCdcbiAgICAgIC5vdGhlcndpc2VcbiAgICAgICAgcmVkaXJlY3RUbzogJy8nXG5cbiJdfQ==

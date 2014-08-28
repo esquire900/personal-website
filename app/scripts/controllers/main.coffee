@@ -14,7 +14,7 @@ angular.module('genApp')
 			$("body").animate({scrollTop: $("body").height()}, 1500);
 			return false
 
-		$scope.email = () ->
+		$scope.emailFunc = () ->
 			$scope.error = undefined
 			if angular.isUndefined($scope.mail) or $scope.mail.search("@") is -1 or $scope.mail.search(".") is -1
 				$scope.error = "Het email adres is niet geldig."
@@ -26,12 +26,13 @@ angular.module('genApp')
 				$scope.error = "Het bericht is niet geldig."
 				return false
 			# email to backend
-				$http({
-					url: './mail.php', 
-					data: {
-						email: $scope.mail
-						name: $scope.name
-						message: $scope.message
-					}
-					, method: "POST"}).success () ->
-					$scope.error = "Het bericht is verstuurd, ik beantwoordt deze zo snel mogelijk."
+			$http({
+				url: './mail.php', 
+				data: {
+					email: $scope.mail
+					name: $scope.name
+					message: $scope.message
+				}
+				, method: "POST"}).success () ->
+				$scope.error = "Het bericht is verstuurd, ik beantwoordt deze zo snel mogelijk."
+				$scope.$apply() if !$scope.$$phase

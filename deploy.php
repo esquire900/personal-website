@@ -13,7 +13,7 @@ set('repository', 'https://simonnouwens:352s7wevz9fa@bitbucket.org/simonnouwens/
 task('deploy:remove_all_but_dist', function(){
     $releasePath = env()->getReleasePath();
     cd($releasePath);
-    run("find directory -not \( -name dist -prune \) -delete");
+    run("find directory -not \( -name dist -prune -depth \) -delete");
     run("mv dist/* .");
 });
 

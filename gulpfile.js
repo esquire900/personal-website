@@ -7,21 +7,16 @@ var gutil = require('gulp-util');
 var stylus = require('gulp-stylus');
 var watch = require('gulp-watch');
 var plumber = require('gulp-plumber');
-var livereload = require('gulp-livereload');
-var embedlr = require("gulp-embedlr");
-var exclude = require('gulp-ignore').exclude;
-var bower = require('gulp-bower-files');
-var filter = require('gulp-filter');
 var minifyCss = require('gulp-minify-css');
 var minifyHtml = require('gulp-minify-html');
-var imagemin = require('gulp-imagemin');
-var rimraf = require('gulp-rimraf');
 var useref = require('gulp-useref');
 var uglify = require('gulp-uglify');
+var gulpif = require('gulp-if');
 var nib = require('nib');
-var rename = require("gulp-rename");
 var fs = require('fs');
 var sourcemaps = require('gulp-sourcemaps');
+var browserSync = require('browser-sync');
+var reload      = browserSync.reload;
 
 // these files are simply (dumb) copied between source and dist, without being processed
 var dumbFiles = [
@@ -29,52 +24,61 @@ var dumbFiles = [
 	'.htaccess', 
 	'favicon.ico',
 	'fonts/**/*',
-	'apple-touch-icon.png',
-	'mail.php',
+	'images/**/*',
+	'vendor/**/*'
+	// 'apple-touch-icon.png'
 ];
 
+gulp.task('browser-sync', function() {
+    browserSync({
+        proxy: "localhost/project/newsreader/app/"
+    });
+});
+
 gulp.task('watch-coffee', function() {
-	watch({glob: './app/scripts/**/*.js'}, function(files) {
-		return files
-		.pipe(livereload());
-	});
-	watch({glob: './app/scripts/**/*.coffee'}, function(files) {
+	gulp.src('./app/scripts/**/*.coffee')
+	.pipe(watch('./app/scripts/**/*.coffee', function(files) {
 		return files
 		.pipe(plumber())
 		.pipe(sourcemaps.init())
 		.pipe(coffee({bare: true}).on('error', gutil.log))
 		.pipe(sourcemaps.write())
-		.pipe(gulp.dest('./.tmp/scripts/'))
-		.pipe(livereload());
-	});
+		.pipe(reload({stream:true}))
+		.pipe(gulp.dest('./.tmp/scripts/'));
+	}))
+	.pipe(gulp.dest('./.tmp/scripts/'));
+
+	gulp.src('./app/scripts/**/*.html')
+	.pipe(watch('./app/scripts/**/*.html', function(files) {
+		return files
+			.pipe(reload({stream:true}));
+	}))
+	.pipe(gulp.dest('./.tmp/scripts/'));
 });
 
-gulp.task('watch-html', function() {
-	watch({glob: './app/**/*.html'}, function(files) {
-		return files
-		.pipe(livereload());
-	});
-});
 
 gulp.task('watch-stylus', function() {
-	watch({glob: './app/**/*.styl'}, function(files) {
+	gulp.src('./app/**/*.styl')
+	.pipe(watch('./app/**/*.styl', function(files) {
 		return files
 		.pipe(stylus({use: [nib()]}))
-		.pipe(gulp.dest('./.tmp/'))
-		.pipe(livereload());
-	});
+		.pipe(reload({stream:true}))
+		.pipe(gulp.dest('./.tmp/'));
+	}))
+	.pipe(gulp.dest('./.tmp/'))
 });
 
 gulp.task('watch-index', function() {
-	watch({glob: './app/index.html'}, function(files) {
+	gulp.src('./app/index.html')
+	.pipe(watch('./app/index.html', function(files) {
 		fs.readFile('./app/index.html', {encoding: "UTF-8"}, function(err, data){
 			data = data.replace(/src="scripts/g, 'src="../.tmp/scripts');
 			data = data.replace(/href="styles/g, 'href="../.tmp/styles');
 			fs.writeFile('./app/dev.html', data);
 		});
 		return files
-			.pipe(livereload());
-	});
+			.pipe(reload({stream:true}));
+	}));
 });
 
 gulp.task("watch-dumb", function(){
@@ -95,15 +99,10 @@ gulp.task("watch-dumb", function(){
 });
 
 
-gulp.task('serve', ['watch-coffee', 'watch-html', 'watch-stylus', 'watch-index', 'watch-dumb']);
+gulp.task('serve', ['watch-coffee','watch-stylus', 'watch-index', 'watch-dumb']);
 
 // =============================================== le building ============================================== //
 
-gulp.task('build-clean', function(){
-	// clean dist
-	return gulp.src('./dist/*', {read: false})
-	    .pipe(rimraf());
-});
 
 gulp.task("build-dumb", function(){
 	for (var i = dumbFiles.length - 1; i >= 0; i--) {
@@ -124,29 +123,21 @@ gulp.task("build-dumb", function(){
 
 // builds the index: changes all js en css files
 gulp.task('build-index', function(){
-	var jsFilter = filter('./app/**/*.js');
-    var cssFilter = filter('./app/**/*.css');
-    var htmlFilter = filter('./app/**/*.html');
+	var assets = useref.assets();
 
-    return gulp.src('./app/index.html')
-        .pipe(useref.assets())
-        .pipe(jsFilter)
-        .pipe(uglify({mangle: false}))
-        .pipe(jsFilter.restore())
-        .pipe(cssFilter)
-        .pipe(minifyCss())
-        .pipe(cssFilter.restore())
-        .pipe(htmlFilter)
-        .pipe(minifyHtml())
-        .pipe(htmlFilter.restore())
-        .pipe(useref.restore())
+    return gulp.src('app/*.html')
+        .pipe(assets)
+        .pipe(gulpif('*.js', uglify({mangle: false})))
+        .pipe(gulpif('*.css', minifyCss()))
+        .pipe(gulpif('*.html', minifyHtml()))
+        .pipe(assets.restore())
         .pipe(useref())
         .pipe(gulp.dest('dist'));
 });
 
 gulp.task("build-images", function(){
 	gulp.src('./app/images/**/*')
-        .pipe(imagemin())
+        // .pipe(imagemin())
         .pipe(gulp.dest('./dist/images/'));
 });
 
@@ -192,7 +183,7 @@ gulp.task('index', function(){
 				add.push('<script src="scripts/'+results[i].replace(".coffee", '')+'.js"></script>')
 			}
 		};
-		return watch({glob: './app/index.html'}, function(files) {
+		return watch('./app/index.html', function(files) {
 			fs.readFile('./app/index.html', {encoding: "UTF-8"}, function(err, data){
 				split = data.split("<!-- build:js(.tmp) scripts/scripts.js -->");
 				split2 = split[1].split("<!-- endbuild -->");

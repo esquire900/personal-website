@@ -3,7 +3,7 @@
 require 'recipe/common.php';
 
 server('main', '192.121.166.203', 22)
-    ->path('/var/www/skikapp.com/')
+    ->path('/var/www/simonnouwens.nl/')
     ->user('root', '352s7wevz9f');
 
 // Specify repository from which to download your projects code.
@@ -13,8 +13,11 @@ set('repository', 'https://simonnouwens:352s7wevz9fa@bitbucket.org/simonnouwens/
 task('deploy:remove_all_but_dist', function(){
     $releasePath = env()->getReleasePath();
     cd($releasePath);
-    run("find directory -not \( -name dist -prune -depth \) -delete");
-    run("mv dist/* .");
+    // run("
+    //     cp -R /dist /var/www/tmp
+    //     rm -rf /dir/
+    //     cp -R /var/www/tmp ./
+    // ");
 });
 
 task('deploy', [

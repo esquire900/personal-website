@@ -30,7 +30,14 @@ portfolio:
       url: "http://www.interieurbouwgids.nl"
       date: Begin 2014
       category: Web Development
-      
+    - image: skikapp.png
+      title: SkikApp
+      desc: "Een hackable newslezer voor programmeurs, gemaakt voor een Deense hackaton."
+      modalid: 5
+      url: "http://www.skikapp.com"
+      date: December 2015
+      category: Web Development  
+
 ---
 ## Open source
 Enkele van mijn projectjes zijn opensource, en hier te bezichtigen:

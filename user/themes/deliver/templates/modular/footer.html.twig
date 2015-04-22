@@ -1,0 +1,14 @@
+<div class="modular-row footer {{ page.header.class }}">
+    <div class="footer-modules">
+        <div class="footer-copyright">
+            {{ site.author.copyright }}
+        </div>
+        <div class="footer-menu">
+            <ul class="othermenu">
+                {% for module in site.othermenu %}
+                    <li><a href="{{ module.url }}">{{ module.text }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>

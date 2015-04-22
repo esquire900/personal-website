@@ -1,0 +1,38 @@
+<div id="content-slide">
+    <div class="slideme">
+        {% for slide in page.header.slides %}
+            <div class="modular-row showcase flush-top" style="
+         background: #47b5cc; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover, #{{ slide.bg_color }} 0%, #{{ slide.bg_color_2 }} 76%, #{{ slide.bg_color_2 }} 76%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #47b5cc), color-stop(76%, #{{ slide.bg_color_2 }}), color-stop(76%, #{{ slide.bg_color_2 }})); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover, #{{ slide.bg_color }} 0%, #{{ slide.bg_color_2 }} 76%, #{{ slide.bg_color_2 }} 76%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover, #{{ slide.bg_color }} 0%, #{{ slide.bg_color_2 }} 76%, #{{ slide.bg_color_2 }} 76%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover, #{{ slide.bg_color }} 0%, #{{ slide.bg_color_2 }} 76%, #{{ slide.bg_color_2 }} 76%); /* IE10+ */
+  background: radial-gradient(ellipse at center, #{{ slide.bg_color }} 0%, #{{ slide.bg_color_2 }} 76%, #{{ slide.bg_color_2 }} 76%); /* W3C */
+       ">
+                <h1>{{ slide.heading }}</h1>
+
+                <h2>{{ slide.subheading }}</h2>
+                <a class="button" href="{{ slide.button_url }}">{{ slide.button_text }}</a>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+{{ content }}
+
+<script type="text/javascript">
+    $('#content-slide').slideme({
+        arrows: {{ site.header_options.arrows }},
+        autoslide: {{ site.header_options.autoslide }},
+        autoslideHoverStop: {{ site.header_options.autoslideHoverStop }},
+        interval: {{ site.header_options.interval }},
+        loop: {{ site.header_options.loop }},
+        pagination: "numbers",
+        transition: '{{ site.header_options.transition }}',
+        itemsForSlide: {{ site.header_options.itemsForSlide }},
+        touch: {{ site.header_options.touch }},
+        swipe: {{ site.header_options.swipe }},
+
+    });
+</script>

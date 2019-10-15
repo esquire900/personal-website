@@ -2,14 +2,21 @@
 <project version="4">
   <component name="dataSourceStorageLocal">
     <data-source name="VPS" uuid="089f4cbe-63c3-4acc-ac1a-bc9aa6b81613">
-      <database-info product="MySQL" version="5.7.23-0ubuntu0.16.04.1" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.46 ( Revision: 9cc87a48e75c2d2e87c1a293b2862ce651cb256e )">
+      <database-info product="MySQL" version="5.7.23-0ubuntu0.16.04.1" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.46 ( Revision: 9cc87a48e75c2d2e87c1a293b2862ce651cb256e )" dbms="MYSQL" exact-version="5.7.23">
         <extra-name-characters>#@</extra-name-characters>
         <identifier-quote-string>`</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact" />
       <secret-storage>master_key</secret-storage>
       <user-name>simonnouwens</user-name>
-      <introspection-schemas>*:information_schema,simonnouwens</introspection-schemas>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="schema">
+            <name qname="information_schema" />
+            <name qname="simonnouwens" />
+          </node>
+        </introspection-scope>
+      </schema-mapping>
       <ssh-properties>
         <enabled>true</enabled>
         <proxy-host>192.121.166.203</proxy-host>
@@ -18,6 +25,36 @@
         <use-password>false</use-password>
         <auth-type>KEY_PAIR</auth-type>
         <private-key-path>$USER_HOME$/.ssh/id_rsa.pem</private-key-path>
+      </ssh-properties>
+    </data-source>
+    <data-source name="postgres@vps" uuid="a1270cc8-eadd-45da-877c-e64ae7b9ee31">
+      <database-info product="PostgreSQL" version="9.5.14" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.2" dbms="POSTGRES" exact-version="9.5.14">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>postgres</user-name>
+      <schema-mapping>
+        <introspection-scope>
+          <node negative="1">
+            <node kind="database" qname="@">
+              <node kind="schema" qname="@" />
+            </node>
+            <node kind="database">
+              <name qname="okolie" />
+              <name qname="sentry" />
+              <node kind="schema" qname="" />
+            </node>
+          </node>
+        </introspection-scope>
+      </schema-mapping>
+      <ssh-properties>
+        <enabled>true</enabled>
+        <proxy-host>vps</proxy-host>
+        <user>root</user>
+        <use-password>false</use-password>
+        <auth-type>KEY_PAIR</auth-type>
+        <private-key-path>$USER_HOME$/.ssh/id_rsa</private-key-path>
       </ssh-properties>
     </data-source>
   </component>

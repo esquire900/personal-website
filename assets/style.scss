@@ -1,0 +1,82 @@
+body {
+  font-family: 'Niramit', sans-serif;
+  background-color: #ededed;
+  font-size: 18px;
+
+  padding-top: 120px;
+}
+
+.content {
+  a {
+    text-decoration: underline;
+  }
+}
+
+
+.shadow {
+  box-shadow: 0 3px 3px #d6d6d6;
+}
+
+.logo {
+  margin: 0 auto;
+  width: 230px;
+  height: 100px;
+  min-height: 100px;
+  padding-top: 50px;
+
+  .logo-container {
+
+    img {
+      width: 50px;
+      float: left;
+    }
+
+    h1 {
+      font-size: 55px;
+      margin-top: -11px;
+      margin-left: -35px;
+      float: right;
+    }
+  }
+}
+
+.clients, .projects {
+  padding-bottom: 15px !important;
+  padding-top: 10px;
+
+  a {
+    text-decoration: none;
+  }
+
+  .head {
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e1e1e1;
+  }
+}
+
+.clients {
+  .head {
+    background: #F74F4C;
+  }
+}
+
+
+//.projects {
+//  .head {
+//    background: #66b2ff;
+//  }
+//}
+
+.white-block {
+  background-color: white;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.clientimg {
+  height: 25px;
+  margin: 0 5px;
+  vertical-align: middle;
+}

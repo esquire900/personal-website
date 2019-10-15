@@ -1,145 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="32d30f4e-381d-425b-ad7b-67e5ba4bbc0d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/simon.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/simon.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ghost/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simon.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+    <list default="true" id="32d30f4e-381d-425b-ad7b-67e5ba4bbc0d" name="Default" comment="new site version">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/custom.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/font-awesome.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/ie8.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/ie9.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/images/ie/grad0-15.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/images/overlay.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/Apercu-Light.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/Apercu-Regular.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/FontAwesome.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/MuseoSans-100.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/MuseoSans-100Italic.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/MuseoSans-300.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/MuseoSans-300Italic.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/MuseoSans-700Italic.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/MuseoSans-900Italic.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/MuseoSans_500.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/MuseoSans_500_Italic.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/MuseoSans_700.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/MuseoSans_900.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_bold-demo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_bold-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_bold-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_bold-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_bold-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_bold-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_bold_it-demo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_bold_it-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_bold_it-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_bold_it-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_bold_it-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_bold_it-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_bold_italic-demo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_bold_italic-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_bold_italic-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_bold_italic-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_bold_italic-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_bold_italic-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_extrabold-demo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_extrabold-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_extrabold-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_extrabold-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_extrabold-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_extrabold-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_light-demo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_light-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_light-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_light-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_light-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_light-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_light_it-demo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_light_it-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_light_it-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_light_it-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_light_it-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_light_it-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_light_italic-demo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_light_italic-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_light_italic-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_light_italic-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_light_italic-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_light_italic-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_reg-demo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_reg-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_reg-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_reg-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_reg-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_reg-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_reg_it-demo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_reg_it-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_reg_it-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_reg_it-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_reg_it-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_reg_it-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_regular-demo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_regular-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_regular-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_regular-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_regular-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_regular-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_regular_italic-demo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_regular_italic-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_regular_italic-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_regular_italic-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_regular_italic-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_regular_italic-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_semibold-demo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_semibold-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_semibold-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_semibold-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_semibold-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_semibold-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_semibold_italic-demo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_semibold_italic-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_semibold_italic-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_semibold_italic-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_semibold_italic-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/proxima_nova_semibold_italic-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/ie/PIE.htc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/ie/backgroundsize.min.htc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/ie/html5shiv.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/ie/respond.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/jquery.scrolly.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/jquery.scrollzer.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/skel.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/typed.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/util.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sass/ie8.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sass/ie9.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sass/libs/_functions.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sass/libs/_mixins.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sass/libs/_skel.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sass/libs/_vars.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sass/main.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/screens/aepex.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/screens/ibg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/screens/kidup.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/screens/mencia.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/screens/menciacultuur.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/screens/ovoweb.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/screens/reqwire.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/screens/svak.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -296,7 +159,7 @@
       <workItem from="1554383448593" duration="178000" />
       <workItem from="1571052249068" duration="5172000" />
       <workItem from="1571135033038" duration="17000" />
-      <workItem from="1571141287646" duration="2285000" />
+      <workItem from="1571141287646" duration="2662000" />
     </task>
     <task id="LOCAL-00001" summary="ander koipschot">
       <created>1554046368412</created>
@@ -305,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1554046368412</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="new site version">
+      <created>1571144400231</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1571144400231</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -326,6 +196,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ander koipschot" />
-    <option name="LAST_COMMIT_MESSAGE" value="ander koipschot" />
+    <MESSAGE value="new site version" />
+    <option name="LAST_COMMIT_MESSAGE" value="new site version" />
   </component>
 </project>
